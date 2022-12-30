@@ -2,7 +2,6 @@ import React from 'react';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { Box, Flex,  Image,  useDisclosure } from '@chakra-ui/react';
 import { Link, } from 'react-router-dom';
-import Logo from '../../../Assets/rsz_rsz_white-removebg-preview.png'
 import './Navbar.css'
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -20,7 +19,7 @@ const Navbar = () => {
                             >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <Link to='/'><Image className="lg:ml-0 md:ml-0 ml-3" src={Logo} alt='Logo' /></Link>
+                        <Link to='/'><Image className="lg:ml-0 md:ml-0 ml-3 "alt='Logo' />THRIVE</Link>
                     </Flex>
                 </Flex>
             </Box>
