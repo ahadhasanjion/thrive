@@ -55,22 +55,7 @@ const SignUp = () => {
             })
     }
 
-    const handleSignInWithFacebook = () => {
-        signInWithFacebook()
-            .then(result => {
-                const user = result.user;
-                
-
-                if (user.uid) {
-                    toast.success('Login successfully', {
-                        position: "top-center"
-                    });
-                }
-            })
-            .catch(error => {
-                console.error(error);
-            })
-    }
+   
 
     return (
         <div>
@@ -151,40 +136,8 @@ const SignUp = () => {
                             </div>
                         </div>
                     </Link>
-                    <Link onClick={handleSignInWithFacebook}>
-                        <div className='flex justify-content-center align-items-center mt-3 '>
-                            <div className='flex justify-between items-center login-container hover:bg-warning'>
-                                <div className='w-8 h-8 ml-1'>
-                                    <img
-                                        src={facebook} alt=''
-                                    ></img>
-                                </div>
-                                <div className=' font-semibold '>
-                                    Continue with FaceBook
-                                </div>
-                                <div className='mr-6'>
-
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    {/* <Link onClick={handleSignInWithGitHub}>
-                        <div className='flex justify-content-center align-items-center mt-3 '>
-                            <div className='flex justify-between items-center login-container hover:bg-warning'>
-                                <div className='w-8 h-8 ml-1'>
-                                    <img
-                                        src='https://i.ibb.co/Z62F8M5/github-512.png' alt=''
-                                    ></img>
-                                </div>
-                                <div className=' font-semibold '>
-                                    Continue with github
-                                </div>
-                                <div className='mr-6'>
-
-                                </div>
-                            </div>
-                        </div>
-                    </Link> */}
+                
+            
                 </div>
             </div>
         </div>
