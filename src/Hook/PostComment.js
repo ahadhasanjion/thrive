@@ -1,6 +1,6 @@
 import toast from 'react-hot-toast';
 export const PostComment = (product) => {
-    fetch('http://localhost:5000/postcomment', {
+    fetch('https://srjr-server-rust.vercel.app/postcomment', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
